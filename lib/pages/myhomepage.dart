@@ -86,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage>
               child: Padding(
                 padding: const EdgeInsets.only(top: 20, right: 30),
                 child: favouriteitems.isNotEmpty
-                    ? Badge(
+                    ? badges(
                         badgeContent: Text(
                           favouriteitems.length.toString(),
                           style: style.copyWith(
