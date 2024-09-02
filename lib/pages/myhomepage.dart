@@ -1,7 +1,6 @@
 import 'package:animate_do/animate_do.dart';
-import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
-
+import 'package:badges/badges.dart'as badges;
 import 'package:shoes_shop_ui/consts.dart';
 import 'package:shoes_shop_ui/pages/details_page.dart';
 import 'package:shoes_shop_ui/models/shoes_model.dart';
@@ -86,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage>
               child: Padding(
                 padding: const EdgeInsets.only(top: 20, right: 30),
                 child: favouriteitems.isNotEmpty
-                    ? badges(
+                    ? badges.Badge(
                         badgeContent: Text(
                           favouriteitems.length.toString(),
                           style: style.copyWith(
